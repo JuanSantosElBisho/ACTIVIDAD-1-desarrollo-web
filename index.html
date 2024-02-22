@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUAN MANUEL SANTOS GALLEGO</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1 id="nombre_principal">JUAN MANUEL SANTOS GALLEGO</h1>
+    <img src="imagen.jpeg" alt="Mi foto" id="foto_principal">
+    <p id="descripcion">Soy un estudiante de 19 años de Ingeniería Multimedia que le gusta el gimnasio, fútbol, escuchar música y salir a comer.</p>
+    <div id="fotos_actividades">
+        <h2>Actividades</h2>
+        <img src="foto_gym.jpeg" alt="Gimnasio" class="actividades">
+        <img src="foto_futbol.jpg" alt="Fútbol" class="actividades">
+        <img src="foto_musica.png" alt="Escuchar música" class="actividades">
+    </div>
+    <div id="media">
+        <div id="video">
+            <h2>VIDEO COSAS IMPORTANTES PARA MI</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jwQ-igo2xzs?si=LIXXl8wsXezE3v4o" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div id="audio">
+            <h2>CANCION FAVORITA</h2>
+            <audio controls>
+              <source src="audio.mp3" type="audio/mpeg">
+              Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+    </div>
+    <div id="formulario_contacto">
+        <h2>Formulario de contacto</h2>
+        <form action="enviar.php" method="post">
+            <label for="nombre_form">Nombre:</label><br>
+            <input type="text" id="nombre_form" name="nombre" class="input_formulario"><br>
+            <label for="email_form">Email:</label><br>
+            <input type="email" id="email_form" name="email" class="input_formulario"><br>
+            <label for="motivo_form">Motivo de contacto:</label><br>
+            <textarea id="motivo_form" name="motivo" class="input_formulario"></textarea><br>
+            <input type="submit" value="Enviar" class="boton_enviar">
+        </form>
+    </div>
+    <div id="redes_sociales" style="display: flex; flex-wrap: wrap; width: 200px;">
+        <div style="flex: 50%;">
+            <p>Facebook</p>
+        </div>
+        <div style="flex: 50%;">
+            <a href="https://www.facebook.com/profile.php?id=100009540110331&mibextid=ZbWKwL"><img src="facebook.png" alt="Facebook" style="width: 100%;"></a>
+        </div>
+        <div style="flex: 50%;">
+            <p>Instagram</p>
+        </div>
+        <div style="flex: 50%;">
+            <a href="https://www.instagram.com/jms.0906?igsh=bXMzdXYyenZveGxr "><img src="Instagram.png" alt="Instagram" style="width: 100%;"></a>
+        </div>
+    </div>
+</body>
+</html>
